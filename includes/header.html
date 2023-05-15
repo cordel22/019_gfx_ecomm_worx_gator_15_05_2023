@@ -1,0 +1,57 @@
+<?php #C00Script 19.3 - header.html
+  //  This page begins the session, the HTML page, and the layout table.
+
+  session_start();  //  Start a session.
+
+  ?>
+
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml"
+  xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" 
+    content="text/html; charset=utf-8" />
+    <title>
+      <?php 
+        echo (isset($page_title)) ? $page_title : 'Welcome!';
+      ?>
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="container text-center">
+    
+
+          <!-- navbar -->
+
+          <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="index.php">HOME</a></li>
+                  <li><a href="browse_prints.php">PAINTINGS</a></li>
+                  
+                  <li><a href="view_cart.php">CART</a></li>
+                  
+                  <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+
+          <!-- end navbar -->
